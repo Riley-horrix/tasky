@@ -83,7 +83,7 @@ lazy val buildFrontend = taskKey[Map[String, File]]("Build the Scala Laminar fro
 
 buildFrontend := {
     val (report, fm) = reportFrontend.value
-    val outDir = (ThisBuild / baseDirectory).value / "static"
+    val outDir = (ThisBuild / baseDirectory).value / "frontend/static"
     
     IO.listFiles(fm)
         .map { file =>
@@ -149,7 +149,7 @@ cleanHard := {
     println("done")
     
     print("Removing targets... ")
-    "rm -rf static/".!
+    "rm -rf frontend/static/".!
     println("done")
 
     print("Removing backend targets... ")

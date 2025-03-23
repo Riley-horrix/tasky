@@ -1,8 +1,13 @@
+# Frontend
 target
 static
 node_modules
+
+# Backend
+__pycache__
 
 # IDE
 .metals
 .vscode
 .bsp
+.bloop
