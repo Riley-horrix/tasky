@@ -1,0 +1,12 @@
+{
+  "name": "tasky",
+  "version": "0.0.1",
+  "description": "AI powered task manager.",
+  "scripts": {
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  }
+}

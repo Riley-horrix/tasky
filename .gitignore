@@ -1,0 +1,8 @@
+target
+static
+node_modules
+
+# IDE
+.metals
+.vscode
+.bsp
