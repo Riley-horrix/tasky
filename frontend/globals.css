@@ -1,14 +1,20 @@
-:root {
-  --background-primary: #000;
-  --background-secondary: #000;
-  --background-tertiary: #000;
+@import url("styles/auth.css");
+@import url("styles/home.css");
 
-  --foreground-primary: #fff;
-  --foreground-secondary: #fff;
-  --foreground-tertiary: #fff;
+@import url("styles/task.css");
+@import url("styles/task/calendar.css");
+
+:root {
+  --background-primary: #141414;
+  --background-secondary: #1c1c1c;
+  --background-tertiary: #535353;
+
+  --foreground-primary: #d0d0d0;
+  --foreground-secondary: #ededed;
+  --foreground-tertiary: #0f0f0f;
 }
 
-[data-theme="light"] {
+[data-theme="dark"] {
   --background-primary: #fff;
   --background-secondary: #fff;
   --background-tertiary: #fff;
@@ -18,9 +24,33 @@
   --foreground-tertiary: #000;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   background-color: var(--background-primary);
   color: var(--foreground-primary);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.main-view {
+  width: 100%;
+  height: 100%;
 }

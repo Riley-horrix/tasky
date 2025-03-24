@@ -1,0 +1,123 @@
+.task-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-view-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-top-bar {
+  background-color: var(--background-tertiary);
+  padding: 10px;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-title {
+  padding-inline: 10px;
+}
+
+.task-page-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
+
+.task-page-selector-element {
+  cursor: pointer;
+  border-radius: 10px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  transition: background-color 0.5s;
+}
+
+.task-page-selector-element:hover {
+  background-color: var(--background-secondary);
+}
+
+.task-left-bar {
+  padding-inline: 10px;
+  padding-block: 10px;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-task-container {
+  min-height: 35%;
+  flex-grow: 1;
+  border-radius: 10px;
+  background-color: var(--background-tertiary);
+  padding-inline: 10px;
+  padding-block: 5px;
+  text-align: center;
+}
+
+.task-task-inner-container {
+  margin-top: 6px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 200px;
+  max-height: 90%;
+  padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+ background: #00000022;
+ border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+ background: #888;
+ border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+ background: #555;
+}
+.task-task-style {
+  background-color: var(--background-primary);
+  border-radius: 10px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.5s;
+}
+
+.task-task-style:hover {
+  background-color: var(--background-secondary);
+}
+
+.task-task-attr {
+  font-size: 12px;
+}
+
+.task-task-desc {
+  overflow: hidden;
+  transition: max-height 0.2s;
+  max-height: 0px;
+}
+
+.task-task-desc.expanded {
+  max-height: 100px;
+}
