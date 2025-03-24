@@ -2,6 +2,6 @@ package Auth
 
 import com.raquo.laminar.api.L.*
 
-object LoginView {
+object AuthView {
     def apply(): Element = h1("Login!")
 }

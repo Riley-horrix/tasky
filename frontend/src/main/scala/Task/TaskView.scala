@@ -1,7 +1,7 @@
-package Calendar
+package Task
 
 import com.raquo.laminar.api.L.*
 
-object CalendarView {
+object TaskView {
     def apply(): Element = h1("Calendar!")
 }

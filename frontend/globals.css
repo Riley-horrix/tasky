@@ -1,8 +1,26 @@
 :root {
-  color: green;
+  --background-primary: #000;
+  --background-secondary: #000;
+  --background-tertiary: #000;
+
+  --foreground-primary: #fff;
+  --foreground-secondary: #fff;
+  --foreground-tertiary: #fff;
+}
+
+[data-theme="light"] {
+  --background-primary: #fff;
+  --background-secondary: #fff;
+  --background-tertiary: #fff;
+
+  --foreground-primary: #000;
+  --foreground-secondary: #000;
+  --foreground-tertiary: #000;
 }
 
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--background-primary);
+  color: var(--foreground-primary);
 }

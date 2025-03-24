@@ -28,7 +28,7 @@ inThisBuild(List(
     scalaVersion := Scala3,
 ))
 
-lazy val isRelease = sys.env.get("RELEASE").contains("true") /* Compile in release mode (not dev) */
+lazy val isRelease = sys.env.get("RELEASE").map(_.toLowerCase()).contains("true") /* Compile in release mode (not dev) */
 
 /* Setup for Laminar */
 lazy val taskyFrontend = project

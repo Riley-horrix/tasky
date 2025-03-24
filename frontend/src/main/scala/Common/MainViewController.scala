@@ -1,21 +1,22 @@
-package View
-
 import com.raquo.laminar.api.L.*
 
-import Calendar.CalendarView
+import Task.TaskView
 
-import Auth.LoginView
+import Auth.AuthView
+
+import Home.HomeView
 
 
 object MainViewController {
     /* View selected */
     enum View(val elem: Element) {
-        case Calendar extends View(CalendarView())
-        case Login extends View(LoginView())
+        case Task extends View(TaskView())
+        case Auth extends View(AuthView())
+        case Home extends View(HomeView())
     }
 
     // Current selected view
-    private val currentView: Var[View] = Var(View.Calendar)
+    private val currentView: Var[View] = Var(View.Task)
 
     // Get a signal of the current view
     val getCurrentView: Signal[View] = currentView.signal
